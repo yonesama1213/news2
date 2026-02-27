@@ -2,8 +2,8 @@ name: news2 Scheduled Update
 
 on:
   schedule:
-    - cron: '30 22 * * *' # 日本時間 7:30
-    - cron: '30 3 * * *'  # 日本時間 12:30
+    - cron: '30 22 * * *'
+    - cron: '30 3 * * *'
   workflow_dispatch:
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11' [cite: 2026-02-26]
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
